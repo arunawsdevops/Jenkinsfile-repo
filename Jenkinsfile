@@ -13,5 +13,11 @@ pipeline {
                 sh "aws s3 ls"
             }
         }
+
+        stage ('show project name') {
+            steps{
+                echo "Project name is Vehicle-data"
+            }
+        }
     }
 }
